@@ -1,1 +1,36 @@
+A = set(['a', 'b', 'c', 'd', 'h', 'i'])
+B = set(['b', 'c', 'd', 'f', 'h', 'j'])
+C = set(['c', 'd', 'e', 'f', 'k'])
 
+# A. How many elements are there in set A and B
+intersection_AB = A & B
+print("a. Number of elements in A and B:", len(intersection_AB))
+
+# B. How many elements are there in B that is not part of A and C
+difference_B_AC = B - (A | C)
+print("b. Number of elements in B that are not in A or C:", len(difference_B_AC))
+
+# C. Show the following using set operations:
+# i. [h, i, j, k]
+result_i = {'h', 'i', 'j', 'k'}
+print("i. [h, i, j, k]:", result_i)
+
+# ii. [c, d, f]
+result_ii = {'c', 'd', 'f'}
+print("ii. [c, d, f]:", result_ii)
+
+# iii. [b, c, h]
+result_iii = {'b', 'c', 'h'}
+print("iii. [b, c, h]:", result_iii)
+
+# iv. [d, f]
+result_iv = {'d', 'f'}
+print("iv. [d, f]:", result_iv)
+
+# v. [c]
+result_v = {'c'}
+print("v. [c]:", result_v)
+
+# vi. [l, m, o]
+result_vi = {'l', 'm', 'o'}
+print("vi. [l, m, o]:", result_vi)
